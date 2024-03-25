@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="header.js" defer></script>
+    <script type="module" src="scripts.js" defer></script>
+    <title>Henri's Blog</title>
+  </head>
+  <body>
+    <script>
+      document.addEventListener("DOMContentLoaded", async () => {
+        await renderPosts();
+      });
+    </script>
+    <div class="wrapper">
+      <div class="header">
+        <header-component></header-component>
+      </div>
+      <hr />
+      <h3>a blog?</h3>
+      <p>
+        <i
+          >Is this a blog? Or is this my therapeutic approach to giving free
+          rein to my thoughts? Or are all blogs essentially that?</i
+        >
+      </p>
+      <div class="content">
+        <h4>Posts:</h4>
+        <div class="container-articles"></div>
+      </div>
+    </div>
+  </body>
+</html>

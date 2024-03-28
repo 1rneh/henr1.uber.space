@@ -1,6 +1,10 @@
 // import markdownit from "markdown-it";
 
 async function renderPosts() {
+  // Inject into custom element blog.js
+  // <div class="container-articles"></div>
+  // renderPosts();
+
   const articlesContainer = document.querySelector(".container-articles");
   const posts = await getPosts();
   posts.forEach((post) => {

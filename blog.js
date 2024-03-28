@@ -15,11 +15,9 @@ class Blog extends HTMLElement {
                 </i>
                 </p>
             </div>
-            <div class="container-articles"></div>
-        </div>
-    `;
-
-    renderPosts();
+            <p>Nothing to see ... yet.</p>
+            </div>
+            `;
   }
 }
 

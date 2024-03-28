@@ -10,6 +10,23 @@ html {
     row-gap: 1em;
 }
 
+#header {
+    display: flex;
+    column-gap: 2em;
+    text-decoration: underline;
+}
+
+hr {
+    opacity: 0.1;
+    width: 100%;
+}
+
+.inner-content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2em;
+}
+
 .contacts {
     display: flex;
     column-gap: 2em;
@@ -31,12 +48,7 @@ time {
     color: grey;
 }
 
-.blog-title {
+.post-title {
     text-decoration: underline;
     color: black;
-}
-
-hr {
-    opacity: 0.1;
-    width: 100%;
 }

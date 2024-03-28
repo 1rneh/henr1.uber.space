@@ -5,9 +5,12 @@ async function renderPosts() {
   const posts = await getPosts();
   posts.forEach((post) => {
     const linkElement = document.createElement("a");
-    linkElement.classList.add("blog-title");
+    linkElement.classList.add("post-title");
     linkElement.textContent = post.title;
-    linkElement.href = post.href;
+    // linkElement.href = post.href;
+    linkElement.onclick = () => {
+      console.log(`Opening ${post.href}`);
+    };
     const timeElement = document.createElement("time");
     timeElement.textContent = post.date;
 
